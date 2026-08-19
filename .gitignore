@@ -1,0 +1,122 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+.venv-1/
+.venv-2/
+.venv-3/
+venv/
+env/
+
+# =========================
+# Environment / Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+# Data
+# =========================
+
+data/raw/
+data/processed/
+
+# Keep folder structure
+!data/
+!data/raw/
+!data/processed/
+
+# =========================
+# Machine Learning
+# =========================
+
+*.h5
+*.keras
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.ckpt
+
+# Ignore trained model files
+models/
+
+# Keep model folder
+!models/
+
+# =========================
+# Node
+# =========================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# n8n
+# =========================
+
+n8n/*.json
+n8n/data/
+.n8n/
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# =========================
+# Build / Cache
+# =========================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/

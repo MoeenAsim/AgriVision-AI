@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgriVision AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <div class="logo">🌾</div>
+        <h1>AgriVision AI</h1>
+        <p>AI-powered wheat disease detection and management assistant</p>
+    </header>
+
+
+    <main>
+
+        <section class="card upload-card">
+
+            <h2>Analyze Wheat Leaf</h2>
+
+            <p class="subtitle">
+                Upload a wheat leaf image to detect possible diseases.
+            </p>
+
+            <label for="imageInput" class="upload-area">
+
+                <div class="upload-icon">📷</div>
+
+                <h3>Upload Wheat Leaf Image</h3>
+
+                <p>Click here to choose an image</p>
+
+                <span class="browse-button">
+                    Choose Image
+                </span>
+
+            </label>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+            >
+
+            <div class="preview-container">
+                <img id="preview" alt="Wheat leaf preview">
+            </div>
+
+            <button
+                id="predictButton"
+                class="predict-button"
+                disabled
+            >
+                Analyze Image
+            </button>
+
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <span>Analyzing image...</span>
+            </div>
+
+            <p id="error" class="error"></p>
+
+        </section>
+
+
+        <section id="result" class="card result-card">
+
+            <div class="result-header">
+                <div>
+                    <p class="result-label">Prediction Result</p>
+                    <h2 id="disease">--</h2>
+                </div>
+
+                <div class="confidence-box">
+                    <span>Confidence</span>
+                    <strong id="confidence">--</strong>
+                </div>
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-box">
+                    <h3>🔍 Explanation</h3>
+                    <p id="explanation"></p>
+                </div>
+
+                <div class="info-box">
+                    <h3>🩺 Symptoms</h3>
+                    <p id="symptoms"></p>
+                </div>
+
+                <div class="info-box management-box">
+                    <h3>🌱 Management</h3>
+                    <p id="management"></p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>AgriVision AI • Wheat Disease Classification</p>
+    </footer>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
